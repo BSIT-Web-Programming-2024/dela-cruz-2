@@ -1,0 +1,48 @@
+.swiper-container-testimonials {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+}
+
+.cursor-tracker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4%;
+	z-index: 1;
+}
+
+.ovni {
+	width: 100%;
+	filter: drop-shadow(0 0 1em white);
+	animation: ovni 8s infinite;
+}
+@keyframes ovni {
+	0% {
+		transform: translateX(0) rotate(0deg);
+	}
+	50% {
+		transform: translateX(-25px) rotate(-10deg);
+	}
+	100% {
+		transform: translateX(25) rotate(25deg);
+	}
+}
+
+/* animar astronauta */
+
+@keyframes astronaut {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-25px);
+	}
+	100% {
+		transform: translateY(25);
+	}
+}
+.astronaut-img {
+	animation: astronaut 10s infinite;
+	z-index: 2;
+}
